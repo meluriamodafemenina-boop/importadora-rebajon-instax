@@ -1,0 +1,16 @@
+INSTAX MINI 12 — IMPORTADORA EL REBAJÓN
+
+Archivos:
+- index.html
+- instax-1.jpeg
+- instax-2.jpeg
+- video-instax.mp4 (opcional, debes agregar tu video de CapCut con este nombre)
+
+IMPORTANTE:
+1. Sube index.html, instax-1.jpeg e instax-2.jpeg a la raíz del proyecto.
+2. Si quieres que aparezca el video, exporta el video desde CapCut y súbelo con el nombre exacto:
+   video-instax.mp4
+3. La landing usa la misma conexión Supabase de la landing anterior.
+4. El producto que se registra es: "Instax Mini 12".
+5. Precio: 269000 COP.
+6. Oferta configurada hasta el 17 de septiembre de 2026 a las 11:59 p. m. (Colombia).
