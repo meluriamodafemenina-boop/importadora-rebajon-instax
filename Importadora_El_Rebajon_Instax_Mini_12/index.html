@@ -3,7 +3,8 @@
 <head>
 
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <meta
   name="description"
@@ -12,26 +13,42 @@
 
 <title>Instax Mini 12 | Importadora El Rebajón</title>
 
+<!-- FUENTES -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link
+  href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap"
+  rel="stylesheet"
+>
+
+
 <style>
 
 /* =====================================================
-   VARIABLES
+   COLORES
 ===================================================== */
 
 :root{
-  --pink:#e91e63;
-  --pink-dark:#c2185b;
-  --pink-light:#fff0f6;
-  --pink-soft:#ffe0ec;
-  --rose:#f8b8ce;
-  --cream:#fffafc;
-  --white:#ffffff;
-  --text:#272027;
-  --muted:#756b73;
-  --border:#f0d9e2;
-  --shadow:0 18px 50px rgba(150,70,100,.12);
-  --green:#20a464;
+
+  --lila:#c9b4e8;
+  --lila2:#b79bdd;
+  --lila3:#e9def7;
+
+  --fondo:#faf7fc;
+  --blanco:#ffffff;
+
+  --texto:#33283b;
+  --texto2:#665c6d;
+
+  --borde:#e6dced;
+
+  --rosa:#d98bc0;
+
+  --verde:#3e9b68;
+
 }
+
 
 /* =====================================================
    GENERAL
@@ -46,14 +63,20 @@ html{
 }
 
 body{
+
   margin:0;
-  background:var(--cream);
-  color:var(--text);
+
+  background:var(--fondo);
+
+  color:var(--texto);
+
   font-family:
+    "Montserrat",
     Arial,
-    Helvetica,
     sans-serif;
-  line-height:1.5;
+
+  line-height:1.55;
+
 }
 
 a{
@@ -67,154 +90,195 @@ video{
 }
 
 .wrap{
+
   width:100%;
-  max-width:1160px;
+
+  max-width:1080px;
+
   margin:auto;
+
   padding:0 20px;
+
 }
 
+
 /* =====================================================
-   PROMO BAR
+   BARRA SUPERIOR
 ===================================================== */
 
 .top{
-  background:var(--pink);
-  color:white;
+
+  background:var(--lila);
+
+  color:#30253a;
+
   text-align:center;
+
   padding:10px 15px;
+
   font-size:13px;
-  font-weight:900;
-  letter-spacing:.2px;
+
+  font-weight:700;
+
 }
+
 
 /* =====================================================
    NAV
 ===================================================== */
 
 nav{
+
   position:sticky;
+
   top:0;
+
   z-index:50;
 
-  background:rgba(255,255,255,.94);
-  backdrop-filter:blur(14px);
+  background:
+    rgba(250,247,252,.94);
 
-  border-bottom:1px solid var(--border);
+  backdrop-filter:blur(12px);
+
+  border-bottom:
+    1px solid var(--borde);
+
 }
 
 .navin{
-  min-height:76px;
+
+  min-height:72px;
 
   display:flex;
+
   align-items:center;
+
   justify-content:space-between;
 
-  gap:20px;
+  gap:15px;
+
 }
 
 .brand{
+
   display:flex;
+
   align-items:center;
-  gap:12px;
+
+  gap:10px;
+
 }
 
 .logo{
-  width:56px;
-  height:56px;
+
+  width:50px;
+
+  height:50px;
 
   object-fit:cover;
 
   border-radius:50%;
 
-  border:2px solid var(--pink);
+  border:2px solid var(--lila2);
 
-  box-shadow:
-    0 5px 18px rgba(233,30,99,.18);
+  background:white;
+
 }
 
-.brandtext{
-  font-weight:1000;
-  font-size:15px;
-  line-height:1.05;
+.brand-name{
+
+  font-size:13px;
+
+  font-weight:800;
+
+  line-height:1.15;
+
 }
 
-.brandtext span{
+.brand-name span{
+
   display:block;
-  color:var(--pink);
+
+  color:#9272bd;
+
 }
 
-.navcta{
-  background:var(--pink);
-  color:white;
+.nav-link{
 
-  padding:12px 18px;
+  color:#5c4774;
 
-  border-radius:999px;
+  font-size:13px;
 
-  font-size:14px;
-  font-weight:900;
+  font-weight:800;
 
-  box-shadow:
-    0 8px 20px rgba(233,30,99,.20);
 }
+
 
 /* =====================================================
    HERO
 ===================================================== */
 
 .hero{
-  position:relative;
 
-  overflow:hidden;
-
-  padding:42px 0 65px;
+  padding:
+    35px 0
+    60px;
 
   background:
+
     radial-gradient(
-      circle at 5% 15%,
-      rgba(255,180,205,.38),
-      transparent 28%
-    ),
-    radial-gradient(
-      circle at 95% 80%,
-      rgba(255,215,228,.7),
+      circle at 10% 10%,
+      rgba(201,180,232,.40),
       transparent 30%
     ),
-    var(--cream);
+
+    radial-gradient(
+      circle at 90% 70%,
+      rgba(217,139,192,.15),
+      transparent 30%
+    );
+
 }
 
 .hero-grid{
+
   display:grid;
 
   grid-template-columns:
-    .95fr
-    1.05fr;
+    1.05fr
+    .95fr;
 
-  gap:48px;
+  gap:45px;
 
   align-items:center;
+
 }
+
 
 /* =====================================================
    VIDEO
 ===================================================== */
 
-.video-card{
+.video-box{
+
   position:relative;
 
-  overflow:hidden;
-
-  background:#f7d6e2;
+  background:#eee8f5;
 
   border-radius:28px;
 
-  border:1px solid #edc8d6;
+  overflow:hidden;
 
   box-shadow:
-    0 25px 70px rgba(150,70,100,.18);
+    0 25px 60px rgba(80,50,100,.15);
+
+  border:
+    1px solid var(--borde);
+
 }
 
-.video-card video{
+.video-box video{
+
   display:block;
 
   width:100%;
@@ -223,347 +287,262 @@ nav{
 
   object-fit:cover;
 
-  background:#f5dce5;
+  background:#eee8f5;
+
 }
 
-.video-label{
-  position:absolute;
 
-  left:16px;
-  bottom:16px;
+/* =====================================================
+   HERO TEXTO
+===================================================== */
 
-  background:rgba(255,255,255,.92);
+.eyebrow{
 
-  color:var(--pink-dark);
-
-  padding:9px 14px;
-
-  border-radius:999px;
+  color:#8d6bb5;
 
   font-size:13px;
 
-  font-weight:900;
+  font-weight:800;
 
-  box-shadow:
-    0 5px 18px rgba(0,0,0,.10);
-}
-
-/* =====================================================
-   HERO TEXT
-===================================================== */
-
-.kicker{
-  display:inline-block;
-
-  background:var(--pink-soft);
-
-  color:var(--pink-dark);
-
-  padding:7px 12px;
-
-  border-radius:999px;
-
-  font-size:12px;
-
-  font-weight:900;
-
-  letter-spacing:.7px;
+  letter-spacing:1.5px;
 
   text-transform:uppercase;
+
+  margin-bottom:8px;
+
 }
 
 h1{
+
   font-family:
+    "Cormorant Garamond",
     Georgia,
-    "Times New Roman",
     serif;
 
-  font-size:clamp(42px,5.5vw,68px);
+  font-size:
+    clamp(45px,6vw,70px);
 
-  line-height:.98;
+  line-height:.92;
 
-  margin:17px 0;
+  margin:
+    0 0 18px;
 
-  letter-spacing:-1.5px;
+  color:#34283e;
+
+  font-weight:700;
+
 }
 
-.highlight{
-  color:var(--pink);
-}
-
-.lead{
-  color:var(--muted);
-
-  font-size:19px;
-
-  max-width:600px;
-
-  margin-bottom:24px;
-}
-
-/* =====================================================
-   PRICE
-===================================================== */
-
-.pricebox{
-  background:white;
-
-  border:2px solid var(--pink);
-
-  border-radius:22px;
-
-  padding:21px;
-
-  margin:23px 0;
-
-  box-shadow:
-    var(--shadow);
-}
-
-.old{
-  color:#9b9197;
-
-  font-size:18px;
-
-  text-decoration:line-through;
-}
-
-.price{
-  color:var(--pink);
-
-  font-size:52px;
-
-  line-height:1;
-
-  font-weight:1000;
-
-  margin:7px 0;
-}
-
-.save{
-  color:var(--pink-dark);
-
-  font-weight:900;
-}
-
-/* =====================================================
-   BUTTON
-===================================================== */
-
-.btn{
-  display:flex;
-
-  justify-content:center;
-  align-items:center;
-
-  width:100%;
-
-  padding:17px 20px;
-
-  border-radius:14px;
-
-  background:var(--pink);
-
-  color:white;
+.hero-text{
 
   font-size:17px;
 
-  font-weight:1000;
+  color:var(--texto2);
+
+  margin:
+    0 0 22px;
+
+}
+
+
+/* =====================================================
+   PRECIO
+===================================================== */
+
+.price-card{
+
+  background:white;
+
+  border:
+    1px solid var(--borde);
+
+  border-radius:20px;
+
+  padding:20px;
+
+  margin-bottom:20px;
+
+  box-shadow:
+    0 12px 35px rgba(70,40,90,.08);
+
+}
+
+.old-price{
+
+  color:#9b929f;
+
+  font-size:17px;
+
+  text-decoration:line-through;
+
+}
+
+.price{
+
+  color:#79539e;
+
+  font-size:46px;
+
+  line-height:1.05;
+
+  font-weight:800;
+
+  margin:3px 0;
+
+}
+
+.saving{
+
+  color:#7b6490;
+
+  font-size:14px;
+
+  font-weight:700;
+
+}
+
+
+/* =====================================================
+   BOTÓN
+===================================================== */
+
+.btn{
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  width:100%;
+
+  padding:16px 20px;
+
+  border-radius:14px;
 
   border:0;
+
+  background:#a987cf;
+
+  color:white;
+
+  font-family:
+    "Montserrat",
+    sans-serif;
+
+  font-size:16px;
+
+  font-weight:800;
 
   cursor:pointer;
 
   box-shadow:
-    0 12px 28px rgba(233,30,99,.22);
+    0 10px 25px rgba(120,80,160,.20);
 
   transition:.2s;
+
 }
 
 .btn:hover{
+
   transform:translateY(-2px);
 
-  background:var(--pink-dark);
+  background:#9875c1;
+
 }
 
-.btn:disabled{
-  opacity:.6;
-
-  cursor:not-allowed;
-}
 
 /* =====================================================
-   TRUST
+   CONFIANZA
 ===================================================== */
 
 .trust{
+
   display:flex;
 
   flex-wrap:wrap;
 
-  gap:9px;
+  gap:8px;
 
-  margin-top:16px;
+  margin-top:14px;
+
 }
 
-.pill{
+.trust span{
+
   background:white;
 
-  border:1px solid var(--border);
+  border:
+    1px solid var(--borde);
 
-  color:#5f555c;
+  border-radius:50px;
 
-  padding:8px 12px;
+  padding:7px 10px;
 
-  border-radius:999px;
+  font-size:11px;
 
-  font-size:12px;
+  color:#65596d;
 
-  font-weight:800;
+  font-weight:700;
+
 }
 
+
 /* =====================================================
-   SECTION
+   SECCIONES
 ===================================================== */
 
 .section{
-  padding:75px 0;
 
-  border-top:1px solid #f3e4ea;
-}
+  padding:
+    65px 0;
 
-.section.soft{
-  background:var(--pink-light);
+  border-top:
+    1px solid #eee6f2;
+
 }
 
 .title{
+
   text-align:center;
 
   font-family:
+    "Cormorant Garamond",
     Georgia,
-    "Times New Roman",
     serif;
 
-  font-size:38px;
+  font-size:44px;
 
-  line-height:1.1;
+  line-height:1;
 
-  margin:0 0 12px;
+  margin:
+    0 0 10px;
+
+  color:#3b2d45;
+
 }
 
-.sub{
+.subtitle{
+
+  max-width:650px;
+
+  margin:
+    0 auto 35px;
+
   text-align:center;
 
-  color:var(--muted);
+  color:#756b7c;
 
-  max-width:720px;
+  font-size:15px;
 
-  margin:0 auto 35px;
-
-  font-size:16px;
 }
+
 
 /* =====================================================
-   PRODUCT IMAGES
+   GALERÍA
 ===================================================== */
 
-.product-grid{
-  display:grid;
-
-  grid-template-columns:
-    1fr
-    1fr;
-
-  gap:22px;
-
-  max-width:1000px;
-
-  margin:auto;
-}
-
-.product-img{
-  width:100%;
-
-  display:block;
-
-  border-radius:22px;
-
-  border:1px solid var(--border);
-
-  box-shadow:
-    var(--shadow);
-
-  background:white;
-}
-
-/* =====================================================
-   FEATURES
-===================================================== */
-
-.features{
-  display:grid;
-
-  grid-template-columns:
-    repeat(3,1fr);
-
-  gap:17px;
-
-  max-width:1050px;
-
-  margin:auto;
-}
-
-.feature{
-  background:white;
-
-  border:1px solid var(--border);
-
-  border-radius:20px;
-
-  padding:24px;
-
-  box-shadow:
-    0 10px 35px rgba(150,70,100,.06);
-}
-
-.ico{
-  width:50px;
-  height:50px;
-
-  display:flex;
-
-  align-items:center;
-  justify-content:center;
-
-  background:var(--pink-soft);
-
-  border-radius:15px;
-
-  font-size:25px;
-}
-
-.feature h3{
-  margin:13px 0 6px;
-
-  font-size:18px;
-}
-
-.feature p{
-  color:var(--muted);
-
-  margin:0;
-
-  font-size:14px;
-}
-
-/* =====================================================
-   GIFT SECTION
-===================================================== */
-
-.gift{
-  max-width:1000px;
-
-  margin:auto;
+.gallery{
 
   display:grid;
 
@@ -571,539 +550,624 @@ h1{
     1fr
     1fr;
 
-  gap:22px;
+  gap:18px;
 
-  align-items:stretch;
-}
-
-.gift-card{
-  background:white;
-
-  border:1px solid var(--border);
-
-  border-radius:24px;
-
-  padding:30px;
-
-  box-shadow:var(--shadow);
-}
-
-.gift-card h3{
-  font-family:
-    Georgia,
-    "Times New Roman",
-    serif;
-
-  font-size:29px;
-
-  margin-top:0;
-}
-
-.gift-card p{
-  color:var(--muted);
-}
-
-.gift-list{
-  padding:0;
-
-  margin:20px 0 0;
-
-  list-style:none;
-}
-
-.gift-list li{
-  margin:12px 0;
-
-  font-weight:700;
-}
-
-.gift-list li::before{
-  content:"♥";
-
-  color:var(--pink);
-
-  margin-right:9px;
-}
-
-/* =====================================================
-   OFFER
-===================================================== */
-
-.offer{
   max-width:900px;
 
   margin:auto;
 
+}
+
+.gallery img{
+
+  display:block;
+
+  width:100%;
+
+  border-radius:22px;
+
+  border:
+    1px solid var(--borde);
+
+  box-shadow:
+    0 15px 40px rgba(70,40,90,.10);
+
+}
+
+
+/* =====================================================
+   REGALO
+===================================================== */
+
+.gift{
+
+  max-width:850px;
+
+  margin:auto;
+
   background:
+
     linear-gradient(
       135deg,
-      #fff,
-      #fff0f6
+      #eee4f7,
+      #f8edf6
     );
 
-  border:2px solid var(--rose);
+  border:
+    1px solid #dfd0ec;
 
-  border-radius:28px;
+  border-radius:25px;
 
   padding:38px 30px;
 
   text-align:center;
 
-  box-shadow:var(--shadow);
 }
 
-.offer-badge{
-  display:inline-block;
+.gift-icon{
 
-  background:var(--pink);
+  font-size:42px;
 
-  color:white;
+  margin-bottom:8px;
 
-  padding:8px 14px;
-
-  border-radius:999px;
-
-  font-size:12px;
-
-  font-weight:900;
-
-  letter-spacing:.5px;
 }
 
-.offer h2{
+.gift h3{
+
   font-family:
+    "Cormorant Garamond",
     Georgia,
-    "Times New Roman",
     serif;
 
-  font-size:39px;
+  font-size:34px;
 
-  margin:15px 0 5px;
+  margin:
+    0 0 8px;
+
 }
 
-.offer-old{
-  color:#9b9197;
+.gift p{
 
-  text-decoration:line-through;
+  max-width:650px;
 
-  font-size:20px;
+  margin:auto;
+
+  color:#6c6073;
+
 }
 
-.offer-price{
-  color:var(--pink);
-
-  font-size:54px;
-
-  font-weight:1000;
-
-  line-height:1.05;
-
-  margin:5px 0;
-}
-
-.offer-save{
-  color:var(--pink-dark);
-
-  font-weight:900;
-
-  margin-bottom:20px;
-}
-
-.urgency{
-  display:inline-block;
-
-  background:#fff;
-
-  border:1px solid var(--border);
-
-  color:#5f555c;
-
-  padding:10px 15px;
-
-  border-radius:999px;
-
-  margin-bottom:22px;
-
-  font-weight:800;
-
-  font-size:13px;
-}
 
 /* =====================================================
-   FORM
+   CARACTERÍSTICAS
 ===================================================== */
 
-.formcard{
+.features{
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(3,1fr);
+
+  gap:16px;
+
+  max-width:1000px;
+
+  margin:auto;
+
+}
+
+.feature{
+
+  background:white;
+
+  border:
+    1px solid var(--borde);
+
+  border-radius:18px;
+
+  padding:22px;
+
+  text-align:center;
+
+}
+
+.feature-icon{
+
+  font-size:30px;
+
+}
+
+.feature h3{
+
+  font-size:16px;
+
+  margin:
+    8px 0 5px;
+
+}
+
+.feature p{
+
+  color:#766c7c;
+
+  font-size:13px;
+
+  margin:0;
+
+}
+
+
+/* =====================================================
+   OFERTA
+===================================================== */
+
+.offer{
+
   max-width:850px;
 
   margin:auto;
 
   background:white;
 
-  border:1px solid var(--border);
+  border:
+    2px solid #c8b0e3;
+
+  border-radius:25px;
+
+  padding:32px;
+
+  text-align:center;
+
+  box-shadow:
+    0 15px 45px rgba(90,50,120,.09);
+
+}
+
+.offer-label{
+
+  display:inline-block;
+
+  background:#eadff5;
+
+  color:#78539b;
+
+  padding:7px 13px;
+
+  border-radius:50px;
+
+  font-size:12px;
+
+  font-weight:800;
+
+  margin-bottom:12px;
+
+}
+
+.offer h2{
+
+  font-family:
+    "Cormorant Garamond",
+    Georgia,
+    serif;
+
+  font-size:38px;
+
+  margin:
+    0 0 5px;
+
+}
+
+.offer-old{
+
+  color:#9b929f;
+
+  text-decoration:line-through;
+
+}
+
+.offer-price{
+
+  color:#79539e;
+
+  font-size:45px;
+
+  font-weight:800;
+
+}
+
+.offer-note{
+
+  color:#716576;
+
+  font-size:13px;
+
+  margin-bottom:22px;
+
+}
+
+
+/* =====================================================
+   FORMULARIO
+===================================================== */
+
+.form-wrap{
+
+  max-width:850px;
+
+  margin:auto;
+
+}
+
+.form-card{
+
+  background:white;
+
+  border:
+    1px solid var(--borde);
 
   border-radius:24px;
 
-  padding:27px;
+  padding:25px;
 
-  box-shadow:var(--shadow);
+  box-shadow:
+    0 15px 45px rgba(70,40,90,.08);
+
 }
 
-.formgrid{
+.form-grid{
+
   display:grid;
 
   grid-template-columns:
     1fr
     1fr;
 
-  gap:15px;
+  gap:14px;
+
 }
 
 .field{
+
   display:flex;
 
   flex-direction:column;
 
-  gap:7px;
+  gap:6px;
 
-  margin-bottom:14px;
+}
+
+.field.full{
+
+  grid-column:
+    1 / -1;
+
 }
 
 .field label{
-  font-size:14px;
 
-  font-weight:900;
+  font-size:13px;
+
+  font-weight:700;
+
+  color:#514657;
+
 }
 
 .field input,
 .field select{
+
   width:100%;
 
   padding:14px;
 
-  border-radius:12px;
+  border-radius:11px;
 
-  border:1px solid #e5d3db;
+  border:
+    1px solid #ddd3e4;
 
-  background:#fffafd;
+  background:#fcfafd;
 
-  color:var(--text);
+  color:#33283b;
 
-  font-size:16px;
+  font-family:
+    "Montserrat",
+    sans-serif;
+
+  font-size:14px;
 
   outline:none;
+
 }
 
 .field input:focus,
 .field select:focus{
-  border-color:var(--pink);
+
+  border-color:#aa8aca;
 
   box-shadow:
-    0 0 0 3px rgba(233,30,99,.08);
+    0 0 0 3px rgba(170,138,202,.12);
+
 }
 
-.full{
-  grid-column:1/-1;
+.form-button{
+
+  margin-top:18px;
+
 }
 
 .note{
-  color:#93888e;
-
-  font-size:12px;
 
   text-align:center;
 
-  margin-top:12px;
+  color:#9a919e;
+
+  font-size:11px;
+
+  margin:
+    12px 0 0;
+
 }
+
 
 /* =====================================================
-   PAYMENT
-===================================================== */
-
-.payment{
-  display:flex;
-
-  align-items:center;
-
-  gap:13px;
-
-  background:var(--pink-light);
-
-  border:1px solid var(--rose);
-
-  border-radius:16px;
-
-  padding:15px;
-
-  margin-bottom:20px;
-}
-
-.payment-icon{
-  width:44px;
-  height:44px;
-
-  display:flex;
-
-  align-items:center;
-  justify-content:center;
-
-  background:white;
-
-  border-radius:12px;
-
-  font-size:22px;
-}
-
-.payment strong{
-  display:block;
-}
-
-.payment span{
-  color:var(--muted);
-
-  font-size:13px;
-}
-
-/* =====================================================
-   SUCCESS / ERROR
+   MENSAJES
 ===================================================== */
 
 .success{
+
   display:none;
 
-  background:#edf9f2;
+  background:#edf8f1;
 
-  border:1px solid #9cdbb8;
+  border:
+    1px solid #b8dfc7;
 
-  color:#17643c;
+  color:#28633d;
 
-  border-radius:14px;
+  border-radius:13px;
 
-  padding:16px;
+  padding:15px;
+
+  text-align:center;
 
   margin-bottom:15px;
 
-  text-align:center;
+  font-size:14px;
+
 }
 
 .error{
+
   display:none;
 
   background:#fff0f0;
 
-  border:1px solid #e4aaaa;
+  border:
+    1px solid #e4bcbc;
 
-  color:#8c2b2b;
+  color:#8b3535;
 
-  border-radius:14px;
+  border-radius:13px;
 
-  padding:16px;
+  padding:15px;
+
+  text-align:center;
 
   margin-bottom:15px;
 
-  text-align:center;
+  font-size:14px;
+
 }
+
 
 /* =====================================================
    FAQ
 ===================================================== */
 
 .faq{
-  max-width:850px;
+
+  max-width:800px;
 
   margin:auto;
+
 }
 
 .faq details{
+
   background:white;
 
-  border:1px solid var(--border);
+  border:
+    1px solid var(--borde);
 
-  border-radius:15px;
+  border-radius:13px;
 
-  margin:10px 0;
+  padding:16px;
 
-  padding:17px 18px;
+  margin-bottom:9px;
 
-  box-shadow:
-    0 5px 20px rgba(150,70,100,.04);
 }
 
 .faq summary{
+
   cursor:pointer;
 
-  font-weight:900;
+  font-weight:700;
+
+  font-size:14px;
+
 }
 
 .faq p{
-  color:var(--muted);
 
-  margin-bottom:0;
+  color:#766c7c;
+
+  font-size:13px;
+
+  margin:
+    10px 0 0;
+
 }
+
 
 /* =====================================================
    FOOTER
 ===================================================== */
 
 footer{
-  padding:38px 0 100px;
 
-  background:#fff;
-
-  border-top:1px solid var(--border);
-
-  color:#8a7e85;
+  padding:
+    35px 0
+    90px;
 
   text-align:center;
 
-  font-size:13px;
+  background:#eee7f3;
+
+  color:#756a7d;
+
+  font-size:12px;
+
 }
 
+
 /* =====================================================
-   MOBILE BUTTON
+   BOTÓN MÓVIL
 ===================================================== */
 
 .bottom{
+
   display:none;
 
   position:fixed;
 
-  left:0;
-  right:0;
   bottom:0;
+
+  left:0;
+
+  right:0;
 
   z-index:100;
 
-  background:rgba(255,255,255,.96);
+  padding:8px;
 
-  border-top:1px solid var(--border);
+  background:
+    rgba(250,247,252,.96);
 
-  padding:9px;
+  border-top:
+    1px solid var(--borde);
 
   backdrop-filter:blur(10px);
+
 }
 
-.bottom .btn{
-  padding:14px;
-}
 
 /* =====================================================
    RESPONSIVE
 ===================================================== */
 
-@media(max-width:850px){
+@media(max-width:800px){
 
   .hero-grid{
+
     grid-template-columns:1fr;
-  }
 
-  .product-grid{
-    grid-template-columns:1fr;
-  }
+    gap:28px;
 
-  .gift{
-    grid-template-columns:1fr;
-  }
-
-  .features{
-    grid-template-columns:1fr 1fr;
-  }
-
-  .formgrid{
-    grid-template-columns:1fr;
-  }
-
-  .full{
-    grid-column:auto;
-  }
-
-  .bottom{
-    display:block;
-  }
-
-}
-
-@media(max-width:560px){
-
-  .wrap{
-    padding:0 15px;
-  }
-
-  .navin{
-    min-height:68px;
-  }
-
-  .logo{
-    width:48px;
-    height:48px;
-  }
-
-  .brandtext{
-    font-size:12px;
-  }
-
-  .navcta{
-    padding:10px 13px;
-
-    font-size:12px;
   }
 
   .hero{
-    padding:25px 0 45px;
-  }
 
-  h1{
-    font-size:43px;
-  }
+    padding-top:25px;
 
-  .lead{
-    font-size:17px;
-  }
-
-  .price{
-    font-size:45px;
-  }
-
-  .title{
-    font-size:31px;
   }
 
   .features{
+
+    grid-template-columns:
+      1fr 1fr;
+
+  }
+
+  .form-grid{
+
     grid-template-columns:1fr;
+
   }
 
-  .offer{
-    padding:28px 20px;
+  .field.full{
+
+    grid-column:auto;
+
   }
 
-  .offer h2{
-    font-size:32px;
+  .bottom{
+
+    display:block;
+
   }
 
-  .offer-price{
-    font-size:45px;
-  }
+  .nav-link{
 
-  .formcard{
-    padding:19px;
+    display:none;
+
   }
 
 }
+
+
+@media(max-width:600px){
+
+  .gallery{
+
+    grid-template-columns:1fr;
+
+  }
+
+  .features{
+
+    grid-template-columns:1fr;
+
+  }
+
+  .title{
+
+    font-size:38px;
+
+  }
+
+  .price{
+
+    font-size:42px;
+
+  }
+
+  .offer{
+
+    padding:25px 18px;
+
+  }
+
+}
+
 
 </style>
 
 </head>
 
+
 <body>
 
 
 <!-- =====================================================
-     PROMOCIÓN
+     BARRA SUPERIOR
 ===================================================== -->
 
 <div class="top">
-💗 OFERTA ESPECIAL · PRECIO POR 7 DÍAS · 🚚 ENVÍOS A COLOMBIA · 💵 PAGA AL RECIBIR
+
+💜 OFERTA ESPECIAL POR 7 DÍAS · 🚚 ENVÍOS A COLOMBIA · 💵 PAGA AL RECIBIR
+
 </div>
+
 
 
 <!-- =====================================================
@@ -1122,24 +1186,28 @@ footer{
   alt="Importadora El Rebajón"
 >
 
-<div class="brandtext">
+<div class="brand-name">
+
 IMPORTADORA
+
 <span>EL REBAJÓN</span>
+
 </div>
 
 </div>
 
 
 <a
-  class="navcta"
+  class="nav-link"
   href="#pedido"
 >
-PEDIR AHORA
+Hacer pedido
 </a>
 
 </div>
 
 </nav>
+
 
 
 <main>
@@ -1156,16 +1224,11 @@ PEDIR AHORA
 
 <!-- VIDEO ÚNICO -->
 
-<div>
-
-<div class="video-card">
+<div class="video-box">
 
 <video
-  autoplay
-  muted
-  loop
-  playsinline
   controls
+  playsinline
   preload="metadata"
   poster="instax-1.jpeg"
 >
@@ -1179,78 +1242,82 @@ Tu navegador no puede reproducir este video.
 
 </video>
 
-<div class="video-label">
-📸 Mira la Instax Mini 12
-</div>
-
-</div>
-
 </div>
 
 
-<!-- TEXTO -->
+
+<!-- INFORMACIÓN -->
 
 <div>
 
-<div class="kicker">
-🎁 REGALO PERFECTO
+<div class="eyebrow">
+
+FUJIFILM INSTAX MINI 12
+
 </div>
 
 
 <h1>
-Tus momentos más bonitos,
-<span class="highlight">
-en tus manos.
-</span>
+
+Convierte tus momentos
+en recuerdos para siempre.
+
 </h1>
 
 
-<p class="lead">
-Con la <strong>Fujifilm Instax Mini 12</strong> puedes
-capturar momentos especiales y convertirlos en
-fotografías instantáneas para guardar, regalar
-y recordar.
+<p class="hero-text">
+
+Una cámara instantánea perfecta para
+cumpleaños, viajes, amistades, parejas
+y esos momentos que quieres conservar
+de una manera especial.
+
 </p>
 
 
-<div class="pricebox">
 
-<div class="old">
+<div class="price-card">
+
+<div class="old-price">
+
 Antes: $389.000
+
 </div>
 
 <div class="price">
+
 $269.000
-</div>
-
-<div class="save">
-💗 Ahorras $120.000
-</div>
 
 </div>
+
+<div class="saving">
+
+✨ Ahorras $120.000
+
+</div>
+
+</div>
+
 
 
 <a
   class="btn"
   href="#pedido"
 >
+
 📸 QUIERO MI INSTAX MINI 12
+
 </a>
+
 
 
 <div class="trust">
 
-<span class="pill">
-💵 Pago contra entrega
-</span>
+<span>💵 Pago contra entrega</span>
 
-<span class="pill">
-🚚 Envíos a Colombia
-</span>
+<span>🚚 Envíos a Colombia</span>
 
-<span class="pill">
-🎁 Ideal para regalar
-</span>
+<span>✨ Producto nuevo</span>
 
 </div>
 
@@ -1259,99 +1326,37 @@ $269.000
 </div>
 
 </section>
+
 
 
 <!-- =====================================================
      REGALO
 ===================================================== -->
 
-<section class="section soft">
+<section class="section">
 
 <div class="wrap">
 
-<h2 class="title">
-¿Buscas un regalo especial?
-</h2>
-
-<p class="sub">
-Hay regalos que se olvidan y otros que se convierten
-en recuerdos. La Instax Mini 12 es perfecta para
-compartir momentos y conservarlos para siempre.
-</p>
-
-
 <div class="gift">
 
-
-<div class="gift-card">
+<div class="gift-icon">
+🎁
+</div>
 
 <h3>
-💗 Un regalo que se queda
+
+¿Buscas un regalo diferente?
+
 </h3>
 
 <p>
-Para cumpleaños, aniversarios, Día de la Amistad,
-viajes, celebraciones o simplemente para sorprender
-a alguien especial.
+
+Sorprende a esa persona especial con una
+cámara que no solo toma fotografías:
+crea recuerdos que pueden conservarse
+y compartirse.
+
 </p>
-
-<ul class="gift-list">
-
-<li>
-Captura el momento
-</li>
-
-<li>
-Imprime el recuerdo
-</li>
-
-<li>
-Regala una fotografía
-</li>
-
-<li>
-Conserva momentos especiales
-</li>
-
-</ul>
-
-</div>
-
-
-<div class="gift-card">
-
-<h3>
-✨ Fácil y divertida
-</h3>
-
-<p>
-Su diseño compacto hace que sea fácil llevarla
-contigo y disfrutar de tus fotografías instantáneas
-en cualquier ocasión.
-</p>
-
-<ul class="gift-list">
-
-<li>
-Diseño compacto
-</li>
-
-<li>
-Modo selfie
-</li>
-
-<li>
-Exposición automática
-</li>
-
-<li>
-Fotos instantáneas
-</li>
-
-</ul>
-
-</div>
-
 
 </div>
 
@@ -1360,8 +1365,9 @@ Fotos instantáneas
 </section>
 
 
+
 <!-- =====================================================
-     IMÁGENES
+     PRODUCTO
 ===================================================== -->
 
 <section class="section">
@@ -1369,27 +1375,29 @@ Fotos instantáneas
 <div class="wrap">
 
 <h2 class="title">
-Conoce tu Instax Mini 12
+
+Así es tu Instax Mini 12
+
 </h2>
 
-<p class="sub">
-Mira los detalles del producto y la presentación
-del kit antes de realizar tu pedido.
+<p class="subtitle">
+
+Un diseño compacto, bonito y fácil de llevar.
+Perfecta para acompañarte en tus mejores momentos.
+
 </p>
 
 
-<div class="product-grid">
+<div class="gallery">
 
 <img
-  class="product-img"
   src="instax-1.jpeg"
-  alt="Fujifilm Instax Mini 12"
+  alt="Fujifilm Instax Mini 12 y accesorios"
 >
 
 <img
-  class="product-img"
   src="instax-2.jpeg"
-  alt="Fujifilm Instax Mini 12 y accesorios"
+  alt="Fujifilm Instax Mini 12"
 >
 
 </div>
@@ -1399,21 +1407,26 @@ del kit antes de realizar tu pedido.
 </section>
 
 
+
 <!-- =====================================================
      CARACTERÍSTICAS
 ===================================================== -->
 
-<section class="section soft">
+<section class="section">
 
 <div class="wrap">
 
 <h2 class="title">
+
 ¿Por qué te va a encantar?
+
 </h2>
 
-<p class="sub">
-Todo lo necesario para disfrutar de tus recuerdos
-de una forma diferente.
+<p class="subtitle">
+
+Todo lo necesario para disfrutar de la fotografía
+instantánea de una forma sencilla y divertida.
+
 </p>
 
 
@@ -1422,17 +1435,16 @@ de una forma diferente.
 
 <div class="feature">
 
-<div class="ico">
+<div class="feature-icon">
 📸
 </div>
 
 <h3>
-Fotos instantáneas
+Fotografías instantáneas
 </h3>
 
 <p>
-Convierte tus momentos en fotografías físicas
-para conservarlas o compartirlas.
+Obtén tus recuerdos en formato físico.
 </p>
 
 </div>
@@ -1440,17 +1452,16 @@ para conservarlas o compartirlas.
 
 <div class="feature">
 
-<div class="ico">
+<div class="feature-icon">
 ✨
 </div>
 
 <h3>
-Exposición automática
+Fácil de usar
 </h3>
 
 <p>
-La cámara ajusta automáticamente la exposición
-para facilitar tus fotografías.
+Diseñada para disfrutar sin complicaciones.
 </p>
 
 </div>
@@ -1458,7 +1469,7 @@ para facilitar tus fotografías.
 
 <div class="feature">
 
-<div class="ico">
+<div class="feature-icon">
 🤳
 </div>
 
@@ -1467,8 +1478,7 @@ Modo selfie
 </h3>
 
 <p>
-Disfruta fotografías de cerca y selfies
-con mayor facilidad.
+Ideal para selfies y fotografías de cerca.
 </p>
 
 </div>
@@ -1476,35 +1486,16 @@ con mayor facilidad.
 
 <div class="feature">
 
-<div class="ico">
-🔍
-</div>
-
-<h3>
-Primer plano
-</h3>
-
-<p>
-Ideal para fotografías de objetos y personas
-a corta distancia.
-</p>
-
-</div>
-
-
-<div class="feature">
-
-<div class="ico">
+<div class="feature-icon">
 🎒
 </div>
 
 <h3>
-Fácil de llevar
+Compacta
 </h3>
 
 <p>
-Llévala contigo a viajes, fiestas, reuniones
-y celebraciones.
+Llévala contigo a donde quieras.
 </p>
 
 </div>
@@ -1512,17 +1503,33 @@ y celebraciones.
 
 <div class="feature">
 
-<div class="ico">
-💗
+<div class="feature-icon">
+💜
 </div>
 
 <h3>
-Un recuerdo diferente
+Diseño encantador
 </h3>
 
 <p>
-Porque una fotografía física siempre tiene
-algo especial.
+Un estilo que combina con cualquier ocasión.
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<div class="feature-icon">
+🌸
+</div>
+
+<h3>
+Perfecta para regalar
+</h3>
+
+<p>
+Un detalle especial para alguien especial.
 </p>
 
 </div>
@@ -1534,89 +1541,55 @@ algo especial.
 
 </section>
 
-
-<!-- =====================================================
-     KIT
-===================================================== -->
-
-<section class="section">
-
-<div class="wrap">
-
-<h2 class="title">
-🎁 Kit especial
-</h2>
-
-<p class="sub">
-Recibe el producto con los elementos mostrados
-en la presentación del kit.
-</p>
-
-
-<div class="gift-card">
-
-<h3>
-📦 Instax Mini 12
-</h3>
-
-<p>
-Cámara Fujifilm Instax Mini 12 con los accesorios
-mostrados en las imágenes del producto.
-</p>
-
-<p>
-<strong>
-Consulta la presentación mostrada antes de realizar
-tu pedido.
-</strong>
-</p>
-
-</div>
-
-</div>
-
-</section>
 
 
 <!-- =====================================================
      OFERTA
 ===================================================== -->
 
-<section class="section soft">
+<section class="section">
 
 <div class="wrap">
 
 <div class="offer">
 
-<div class="offer-badge">
-🔥 OFERTA POR TIEMPO LIMITADO
+<div class="offer-label">
+
+OFERTA ESPECIAL · SOLO 7 DÍAS
+
 </div>
 
 <h2>
-Precio especial
+
+Instax Mini 12
+
 </h2>
 
 <div class="offer-old">
-Antes: $389.000
+
+Antes $389.000
+
 </div>
 
 <div class="offer-price">
+
 $269.000
+
 </div>
 
-<div class="offer-save">
-💗 Ahorras $120.000
-</div>
+<div class="offer-note">
 
-<div class="urgency">
-⏰ Oferta disponible solamente por 7 días
+✨ Ahorras $120.000 · Pago contra entrega
+
 </div>
 
 <a
   class="btn"
   href="#pedido"
 >
-🎁 APROVECHAR LA OFERTA
+
+QUIERO APROVECHAR LA OFERTA
+
 </a>
 
 </div>
@@ -1624,6 +1597,7 @@ $269.000
 </div>
 
 </section>
+
 
 
 <!-- =====================================================
@@ -1638,17 +1612,22 @@ $269.000
 <div class="wrap">
 
 <h2 class="title">
-📦 Haz tu pedido
+
+Haz tu pedido
+
 </h2>
 
-<p class="sub">
-Déjanos tus datos y registraremos tu pedido.
-Después te contactaremos para confirmar la información
-y coordinar el despacho.
+<p class="subtitle">
+
+Déjanos tus datos y nos pondremos en contacto
+contigo para confirmar tu pedido y coordinar el envío.
+
 </p>
 
 
-<div class="formcard">
+<div class="form-wrap">
+
+<div class="form-card">
 
 
 <div
@@ -1664,7 +1643,7 @@ y coordinar el despacho.
 >
 
 <strong>
-❌ No pudimos registrar el pedido.
+No pudimos registrar el pedido.
 </strong>
 
 <br>
@@ -1676,33 +1655,14 @@ Por favor verifica los datos e intenta nuevamente.
 </div>
 
 
-<div class="payment">
-
-<div class="payment-icon">
-💵
-</div>
-
-<div>
-
-<strong>
-Pago contra entrega
-</strong>
-
-<span>
-Paga al recibir tu pedido, sujeto a cobertura
-y condiciones de la transportadora.
-</span>
-
-</div>
-
-</div>
-
 
 <form id="orderForm">
 
 
-<div class="formgrid">
+<div class="form-grid">
 
+
+<!-- NOMBRE -->
 
 <div class="field">
 
@@ -1712,14 +1672,15 @@ Nombre completo *
 
 <input
   id="name"
-  name="name"
   required
   autocomplete="name"
-  placeholder="Ej. Juan Pérez"
+  placeholder="Ej. María Pérez"
 >
 
 </div>
 
+
+<!-- TELÉFONO -->
 
 <div class="field">
 
@@ -1729,7 +1690,6 @@ WhatsApp / celular *
 
 <input
   id="phone"
-  name="phone"
   required
   type="tel"
   inputmode="numeric"
@@ -1740,6 +1700,8 @@ WhatsApp / celular *
 </div>
 
 
+<!-- DEPARTAMENTO -->
+
 <div class="field">
 
 <label for="dept">
@@ -1748,13 +1710,14 @@ Departamento *
 
 <input
   id="dept"
-  name="dept"
   required
   placeholder="Ej. Caldas"
 >
 
 </div>
 
+
+<!-- CIUDAD -->
 
 <div class="field">
 
@@ -1764,7 +1727,6 @@ Ciudad *
 
 <input
   id="city"
-  name="city"
   required
   autocomplete="address-level2"
   placeholder="Ej. La Dorada"
@@ -1772,6 +1734,8 @@ Ciudad *
 
 </div>
 
+
+<!-- BARRIO -->
 
 <div class="field">
 
@@ -1781,7 +1745,6 @@ Barrio *
 
 <input
   id="barrio"
-  name="barrio"
   required
   autocomplete="address-line2"
   placeholder="Ej. Centro"
@@ -1790,16 +1753,33 @@ Barrio *
 </div>
 
 
+<!-- DIRECCIÓN -->
+
+<div class="field full">
+
+<label for="address">
+Dirección de entrega *
+</label>
+
+<input
+  id="address"
+  required
+  autocomplete="street-address"
+  placeholder="Calle, carrera, número, casa/apto"
+>
+
+</div>
+
+
+<!-- CANTIDAD -->
+
 <div class="field">
 
 <label for="qty">
 Cantidad *
 </label>
 
-<select
-  id="qty"
-  name="qty"
->
+<select id="qty">
 
 <option value="1">
 1 unidad — $269.000
@@ -1818,18 +1798,18 @@ Cantidad *
 </div>
 
 
-<div class="field full">
+<!-- PAGO -->
 
-<label for="address">
-Dirección de entrega *
+<div class="field">
+
+<label for="payment">
+Forma de pago
 </label>
 
 <input
-  id="address"
-  name="address"
-  required
-  autocomplete="street-address"
-  placeholder="Calle, carrera, número, casa/apto"
+  id="payment"
+  value="Pago contra entrega"
+  disabled
 >
 
 </div>
@@ -1840,19 +1820,20 @@ Dirección de entrega *
 
 <button
   id="submitBtn"
-  class="btn"
+  class="btn form-button"
   type="submit"
 >
 
-🚚 CONFIRMAR MI PEDIDO
+📦 CONFIRMAR MI PEDIDO
 
 </button>
 
 
 <p class="note">
-Al enviar el formulario autorizas a Importadora
-El Rebajón a utilizar estos datos exclusivamente
-para gestionar y despachar tu pedido.
+
+Tus datos serán utilizados únicamente para gestionar
+y despachar tu pedido.
+
 </p>
 
 
@@ -1862,40 +1843,10 @@ para gestionar y despachar tu pedido.
 
 </div>
 
-</section>
-
-
-<!-- =====================================================
-     CONTRA ENTREGA
-===================================================== -->
-
-<section class="section soft">
-
-<div class="wrap">
-
-<div class="offer">
-
-<h2>
-💵 Compra con pago contra entrega
-</h2>
-
-<p class="sub">
-Realiza tu pedido y paga al recibirlo,
-según cobertura y condiciones de la transportadora.
-</p>
-
-<a
-  class="btn"
-  href="#pedido"
->
-📸 QUIERO MI INSTAX
-</a>
-
-</div>
-
 </div>
 
 </section>
+
 
 
 <!-- =====================================================
@@ -1907,7 +1858,9 @@ según cobertura y condiciones de la transportadora.
 <div class="wrap">
 
 <h2 class="title">
+
 Preguntas frecuentes
+
 </h2>
 
 
@@ -1917,11 +1870,11 @@ Preguntas frecuentes
 <details>
 
 <summary>
-¿Cuál es el precio?
+¿Cuánto cuesta la Instax Mini 12?
 </summary>
 
 <p>
-La oferta publicada es de $269.000 COP.
+El precio especial es de $269.000 COP.
 El precio anterior mostrado es de $389.000 COP.
 </p>
 
@@ -1935,8 +1888,9 @@ El precio anterior mostrado es de $389.000 COP.
 </summary>
 
 <p>
-Sí. La modalidad anunciada es pago contra entrega,
-sujeta a cobertura y condiciones de la transportadora.
+Sí. El pedido se realiza bajo modalidad de pago
+contra entrega, sujeto a la cobertura y condiciones
+de la transportadora.
 </p>
 
 </details>
@@ -1945,12 +1899,12 @@ sujeta a cobertura y condiciones de la transportadora.
 <details>
 
 <summary>
-¿Hacen envíos a Colombia?
+¿Realizan envíos a Colombia?
 </summary>
 
 <p>
-Sí. Realizamos envíos a diferentes ciudades
-de Colombia. La cobertura se valida con la dirección.
+Sí. Realizamos envíos a diferentes ciudades de Colombia.
+La cobertura se confirma al validar la dirección.
 </p>
 
 </details>
@@ -1959,13 +1913,11 @@ de Colombia. La cobertura se valida con la dirección.
 <details>
 
 <summary>
-¿La Instax es buena para regalar?
+¿La cámara es nueva?
 </summary>
 
 <p>
-Sí. Su formato de fotografía instantánea la hace
-una opción especialmente atractiva para cumpleaños,
-amistad, viajes, celebraciones y momentos especiales.
+Sí. El producto ofrecido es nuevo.
 </p>
 
 </details>
@@ -1978,23 +1930,9 @@ amistad, viajes, celebraciones y momentos especiales.
 </summary>
 
 <p>
-Completa el formulario con tu nombre, teléfono,
-departamento, ciudad, barrio, dirección y cantidad.
-Después pulsa “CONFIRMAR MI PEDIDO”.
-</p>
-
-</details>
-
-
-<details>
-
-<summary>
-¿Cuánto dura la oferta?
-</summary>
-
-<p>
-El precio promocional está anunciado por tiempo
-limitado durante 7 días.
+Completa el formulario con tus datos y pulsa
+“CONFIRMAR MI PEDIDO”. Luego nos pondremos
+en contacto contigo para validar la información.
 </p>
 
 </details>
@@ -2007,7 +1945,9 @@ limitado durante 7 días.
 </section>
 
 
+
 </main>
+
 
 
 <!-- =====================================================
@@ -2018,20 +1958,20 @@ limitado durante 7 días.
 
 <div class="wrap">
 
-©️ 2026 Importadora El Rebajón
+© 2026 Importadora El Rebajón
 
 <br><br>
 
-Venta de productos importados ·
-Todos los derechos reservados.
+Venta de productos importados · Colombia
 
 </div>
 
 </footer>
 
 
+
 <!-- =====================================================
-     BOTÓN FIJO MÓVIL
+     BOTÓN MÓVIL
 ===================================================== -->
 
 <div class="bottom">
@@ -2040,10 +1980,13 @@ Todos los derechos reservados.
   class="btn"
   href="#pedido"
 >
+
 📸 PEDIR INSTAX — $269.000
+
 </a>
 
 </div>
+
 
 
 <!-- =====================================================
@@ -2055,12 +1998,14 @@ Todos los derechos reservados.
 
 <script>
 
+
 /* =====================================================
    SUPABASE
 ===================================================== */
 
 const SUPABASE_URL =
 "https://girfmsczqxynfgrhhhxn.supabase.co";
+
 
 const SUPABASE_KEY =
 "sb_publishable_UHKo5A7lWNO8SqEuMimSgg_aS7cnfG-";
@@ -2122,11 +2067,14 @@ document
     const button =
       document.getElementById("submitBtn");
 
+
     const success =
       document.getElementById("success");
 
+
     const error =
       document.getElementById("error");
+
 
     const errorText =
       document.getElementById("errorText");
@@ -2134,6 +2082,7 @@ document
 
     success.style.display =
       "none";
+
 
     error.style.display =
       "none";
@@ -2214,8 +2163,10 @@ document
       error.style.display =
         "block";
 
+
       errorText.textContent =
         "Completa todos los campos obligatorios.";
+
 
       return;
 
@@ -2228,6 +2179,7 @@ document
 
     button.disabled =
       true;
+
 
     button.textContent =
       "⏳ REGISTRANDO PEDIDO...";
@@ -2282,7 +2234,7 @@ document
 
 
       /* =========================
-         SUPABASE
+         INSERTAR
       ========================= */
 
       const resultado =
@@ -2294,7 +2246,6 @@ document
       if(resultado.error){
 
         console.error(
-          "ERROR SUPABASE:",
           resultado.error
         );
 
@@ -2308,12 +2259,19 @@ document
       ========================= */
 
       success.innerHTML =
-        "✅ <strong>¡Pedido registrado correctamente!</strong><br>" +
+
+        "💜 <strong>¡Pedido registrado correctamente!</strong><br>" +
+
         "Tu pedido de " +
+
         qty +
+
         " unidad(es) por " +
+
         money(total) +
+
         " quedó registrado.<br><br>" +
+
         "Nos pondremos en contacto contigo para confirmar el pedido.";
 
 
@@ -2330,6 +2288,10 @@ document
       .reset();
 
 
+      /* =========================
+         SUBIR AL MENSAJE
+      ========================= */
+
       success.scrollIntoView({
 
         behavior:"smooth",
@@ -2345,7 +2307,7 @@ document
     catch(err){
 
       console.error(
-        "ERROR COMPLETO:",
+        "ERROR:",
         err
       );
 
@@ -2374,16 +2336,19 @@ document
       button.disabled =
         false;
 
+
       button.textContent =
-        "🚚 CONFIRMAR MI PEDIDO";
+        "📦 CONFIRMAR MI PEDIDO";
 
     }
 
   }
 );
 
+
 </script>
 
 
 </body>
+
 </html>
